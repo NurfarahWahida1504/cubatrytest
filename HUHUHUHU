@@ -1,0 +1,362 @@
+package assignment2;
+import java.util.Scanner;
+public class Assignment2 {
+
+	public static void main(String[] args) {
+				
+		Scanner ls = new Scanner(System.in);
+		
+		int modern=25 ; int vintage=30; int traditional=35; int custom = 45;//per sqf
+		String a = "Modern + Basic", b = "Modern + Basic", c = "Vintage + Basic", d = " Vintage + Premium", e = "Traditional + Basic", f = "Traditional + Premium";
+		String g= "Custom + Basic", h ="Custom + Premium";
+				
+		
+		System.out.println("Hello, Welcome to MERIDAN INTERIORS! ");
+		System.out.println("Please make sure you insert the right code and spelling while filling the form :D");
+		System.out.println("Do follow the instructions below.");
+		System.out.println();
+		
+		System.out.println("\n________________________________________");
+		System.out.println();
+		System.out.print("          **MERIDIAN INTERIORS**    ");
+		System.out.println("\n________________________________________");
+		System.out.println();
+		System.out.println();
+		
+		
+		String t1= "LIVING ROOM", t2 ="BEDROOM", t3 = "STUDY ROOM", t4= "GAMING ROOM", t5= "STUDIO", t6= "KITCHEN", t7= "TOILET"; 
+		
+		System.out.println("[1] living room, [2] bedroom, [3] study room, [4] gaming room, [5] studio, [6] kitchen, or [7] toilet");
+		System.out.println("Enter code:  ");
+		int type = ls.nextInt(); 
+		
+		while (type != 1 && type != 2 && type != 3 && type != 4 && type != 5 && type != 6 && type != 7) {
+			System.out.println();
+			System.out.println("INVALID");
+			System.out.println("Enter code: ");
+			type = ls.nextInt(); 
+		}
+		
+			switch(type) {
+			case 1:
+				System.out.println("| DESIGN FOR " + t1 + " |");
+				break;
+			case 2:
+				System.out.println("| DESIGN FOR " + t2 + " |");
+				break;
+			case 3:
+				System.out.println("| DESIGN FOR " + t3 + " |");
+				break;
+			case 4:
+				System.out.println("| DESIGN FOR " + t4 + " |");
+				break;
+			case 5:
+				System.out.println("| DESIGN FOR " + t5 + " |");
+				break;
+			case 6:
+				System.out.println("| DESIGN FOR " + t6 + " |");
+				break;	
+			case 7:
+				System.out.println("| DESIGN FOR " + t7 + " |");
+				break;
+				
+			}
+			
+				{
+				//Display type of package
+					System.out.println("\n* * * * * * * Package * * * * * * * * ");
+					System.out.print("*                                   *");
+					System.out.println();
+					System.out.println("*  Set A: " + a + "            *");
+					System.out.println("*  Set B: " + b + "            *");
+					System.out.println("*  Set C: " + c + "           *");
+					System.out.println("*  Set D: " + d + "        *");
+					System.out.println("*  Set E: " + e + "       *");
+					System.out.println("*  Set F: " + f + "     *");
+					System.out.println("*  Set G: " + g + "            *");
+					System.out.println("*  Set H: " + h + "          *");
+					System.out.println("*                                   *");
+					System.out.print("*                                   *");
+					System.out.println("\n* * * * * * * * * * * * * * * * * * *");
+				
+				
+				System.out.println();
+				System.out.println();
+
+				
+				
+		}
+			//Display type of design
+			System.out.println("\n* * * * * * * * * Type of Design * * * * * * * * * * * *");
+			System.out.print("*                                                      *");
+			System.out.println();
+			System.out.println("*  1-Modern                                            *");
+			System.out.println("*  2-Vintage                                           *");
+			System.out.println("*  3-Traditional                                       *");
+			System.out.println("*  4-Custom                                            *");
+			System.out.print("*                                                      *");
+			System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * **");
+			
+			System.out.println();
+			
+			System.out.println("Please Choose Your Design: ");
+			int design = ls.nextInt();
+			
+			
+			while (design != 1 && design != 2 && design != 3 && design != 4) {
+				System.out.println();
+				System.out.println("INVALID");
+				System.out.println();
+				System.out.println("Please Choose Your Design: ");
+				design = ls.nextInt(); 
+			}
+		
+		switch(design) {
+		
+		case 1:
+				System.out.println("\n* * * * * * *Type Of Colour * * * * * * * * * * * * * *");
+				System.out.print("*                                                     *");
+				System.out.println();
+				System.out.println("*  1-Basic Colours                                    *");
+				System.out.println("*  2-Premium colours                                  *");
+				System.out.print("*                                                     *");
+				System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * *");
+				
+				System.out.println("Please Type Of Colour: ");
+				int  typeOfColour= ls.nextInt();
+				
+				while(typeOfColour != 1 && typeOfColour !=2) {
+					System.out.println("Invalid input please try again");
+					typeOfColour = ls.nextInt();
+				
+		}
+				int typeOfColour2 = typeOfColour;
+				
+				if (typeOfColour2 == 1) { 
+					
+				System.out.println("\n* * * * * * * Colours * * * * * * * * * * * * * * * * * * * * * * * * * * * *");
+				System.out.print("*                                                                           *");
+				System.out.println();
+				System.out.println("*  Basic Colours: [1] Black [2] White [3] Green [4] Blue [5] Red [6] Yellow *");
+				System.out.print("*                                                                           *");
+				System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ");
+				
+				System.out.println("Please Choose Colour: ");
+				int  choice1= ls.nextInt();
+				
+				while(choice1 != 1 && choice1 != 2 && choice1 != 3 && choice1 != 4 && choice1 != 5 && choice1 != 6) {
+					System.out.println("Invalid input please try again");
+					choice1 = ls.nextInt(); 
+					break;
+					
+					}
+				
+					
+			if (typeOfColour2 == 2)	
+			
+			System.out.println("\n* * * * * * * Colours * * * * * * * * * * * * * * * * *");
+			System.out.print("*                                                     *");
+			System.out.println();
+			System.out.println("*  Premium colours: [1] Gold [2] Silver [3] Rose [4] Gold             *");
+			System.out.print("*                                                     *");
+			System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * *");
+	
+			System.out.println();
+	
+			System.out.println("Please Choose Colour: ");
+			int  choice2= ls.nextInt();
+			
+			while(choice2 != 1 && choice2 != 2 && choice2 != 3 && choice2 != 4) {
+				System.out.println("Invalid input please try again");
+				choice2 = ls.nextInt(); 
+		}
+					
+		break;
+		
+		}
+		
+		case 2:
+			
+			System.out.println("\n* * * * * * *Type Of Colour * * * * * * * * * * * * * * * * *");
+			System.out.print("*                                                     *");
+			System.out.println();
+			System.out.println("*  1-Basic Colours   *");
+			System.out.println("*  2-Premium colours             *");
+			System.out.print("*                                                     *");
+			System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * *");
+			
+			System.out.println("Please Type Of Colour: ");
+			int  typeOfColour3= ls.nextInt();
+			
+			while(typeOfColour3 != 1 && typeOfColour3 !=2) {
+				System.out.println("Invalid input please try again");
+				typeOfColour3 = ls.nextInt();
+			
+	}
+			int typeOfColour4 = typeOfColour3;
+			
+			if (typeOfColour4 == 1) { 
+				
+			System.out.println("\n* * * * * * * Colours * * * * * * * * * * * * * * * * * * * * * * * * * * * *");
+			System.out.print("*                                                     *");
+			System.out.println();
+			System.out.println("*  Basic Colours: [1] Black [2] White [3] Green [4] Blue [5] Red [6] Yellow   *");
+			System.out.print("*                                                     *");
+			System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ");
+			
+			System.out.println("Please Choose Colour: ");
+			int  choice3= ls.nextInt();
+			
+			while(choice3 != 1 && choice3 != 2 && choice3 != 3 && choice3 != 4 && choice3 != 5 && choice3 != 6) {
+				System.out.println("Invalid input please try again");
+				choice3 = ls.nextInt(); 
+				}
+				
+	} else if (typeOfColour4 == 2)	
+		
+		System.out.println("\n* * * * * * * Colours * * * * * * * * * * * * * * * * * * * *");
+		System.out.print("*                                                     *");
+		System.out.println();
+		System.out.println("*  Premium colours: [1] Gold [2] Silver [3] Rose [4] Gold*");
+		System.out.print("*                                                     *");
+		System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *");
+
+		System.out.println();
+
+		System.out.println("Please Choose Colour: ");
+		int  choice4= ls.nextInt();
+		
+		while(choice4 != 1 && choice4 != 2 && choice4 != 3 && choice4 != 4) {
+			System.out.println("Invalid input please try again");
+			choice4 = ls.nextInt(); 
+	}
+		break;
+		
+		case 3:
+			
+			System.out.println("\n* * * * * * *Type Of Colour * * * * * * * * * * * * * * * * *");
+			System.out.print("*                                                     *");
+			System.out.println();
+			System.out.println("*  1-Basic Colours   *");
+			System.out.println("*  2-Premium colours             *");
+			System.out.print("*                                                     *");
+			System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * *");
+			
+			System.out.println("Please Type Of Colour: ");
+			int  typeOfColour5= ls.nextInt();
+			
+			while(typeOfColour5 != 1 && typeOfColour5 !=2) {
+				System.out.println("Invalid input please try again");
+				typeOfColour5 = ls.nextInt();
+			
+	}
+			int typeOfColour6 = typeOfColour5;
+			
+			if (typeOfColour6 == 1) { 
+				
+			System.out.println("\n* * * * * * * Colours * * * * * * * * * * * * * * * * * * * * * * * * * * * *");
+			System.out.print("*                                                     *");
+			System.out.println();
+			System.out.println("*  Basic Colours: [1] Black [2] White [3] Green [4] Blue [5] Red [6] Yellow   *");
+			System.out.print("*                                                     *");
+			System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ");
+			
+			System.out.println("Please Choose Colour: ");
+			int  choice5= ls.nextInt();
+			
+			while(choice5 != 1 && choice5 != 2 && choice5 != 3 && choice5 != 4 && choice5 != 5 && choice5 != 6) {
+				System.out.println("Invalid input please try again");
+				choice5 = ls.nextInt(); 
+				}
+				
+	} else if (typeOfColour6 == 2)	
+		
+		System.out.println("\n* * * * * * * Colours * * * * * * * * * * * * * * * * *");
+		System.out.print("*                                                     *");
+		System.out.println();
+		System.out.println("*  Premium colours: [1] Gold [2] Silver [3] Rose [4] Gold             *");
+		System.out.print("*                                                     *");
+		System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * *");
+
+		System.out.println();
+
+		System.out.println("Please Choose Colour: ");
+		int  choice6= ls.nextInt();
+		
+		while(choice6 != 1 && choice6 != 2 && choice6 != 3 && choice6 != 4) {
+			System.out.println("Invalid input please try again");
+			choice6 = ls.nextInt(); 
+	}
+			
+			break;
+		case 4:
+			
+			System.out.println("\n* * * * * * *Type Of Colour * * * * * * * * * * * * * * * * *");
+			System.out.print("*                                                     *");
+			System.out.println();
+			System.out.println("*  1-Basic Colours   *");
+			System.out.println("*  2-Premium colours             *");
+			System.out.print("*                                                     *");
+			System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * *");
+			
+			System.out.println("Please Type Of Colour: ");
+			int  typeOfColour7= ls.nextInt();
+			
+			while(typeOfColour7 != 1 && typeOfColour7 !=2) {
+				System.out.println("Invalid input please try again");
+				typeOfColour7 = ls.nextInt();
+			
+	}
+			int typeOfColour8 = typeOfColour7;
+			
+			if (typeOfColour8 == 1) { 
+				
+			System.out.println("\n* * * * * * * Colours * * * * * * * * * * * * * * * * * * * * * * * * * * * *");
+			System.out.print("*                                                     *");
+			System.out.println();
+			System.out.println("*  Basic Colours: [1] Black [2] White [3] Green [4] Blue [5] Red [6] Yellow   *");
+			System.out.print("*                                                     *");
+			System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ");
+			
+			System.out.println("Please Choose Colour: ");
+			int  choice5= ls.nextInt();
+			
+			while(choice5 != 1 && choice5 != 2 && choice5 != 3 && choice5 != 4 && choice5 != 5 && choice5 != 6) {
+				System.out.println("Invalid input please try again");
+				choice5 = ls.nextInt(); 
+				}
+				
+	} else if (typeOfColour8 == 2)	
+		
+		System.out.println("\n* * * * * * * Colours * * * * * * * * * * * * * * * * *");
+		System.out.print("*                                                     *");
+		System.out.println();
+		System.out.println("*  Premium colours: [1] Gold [2] Silver [3] Rose [4] Gold             *");
+		System.out.print("*                                                     *");
+		System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * *");
+
+		System.out.println();
+
+		System.out.println("Please Choose Colour: ");
+		int  choice7= ls.nextInt();
+		
+		while(choice7 != 1 && choice7 != 2 && choice7 != 3 && choice7 != 4) {
+			System.out.println("Invalid input please try again");
+			choice6 = ls.nextInt(); 
+	}
+			
+			break;
+		
+		default:
+			System.out.println("Invalid code :(");
+			
+			
+				}
+			}
+		
+{}
+	}
+
+			
+	
+
